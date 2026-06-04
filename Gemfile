@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gemspec
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-chirpy", "~> 7.0"
 
 gem "html-proofer", "~> 5.0", group: :test
 
