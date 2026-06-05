@@ -18,7 +18,7 @@
     {% assign url = include.subpath | default: '' | append: '/' | append: url %}
 
     {%- comment -%} Prepend CDN URL {%- endcomment -%}
-    {% if site.cdn %}
+    {% if site.cdn and site.cdn != "" %}
       {% assign url = site.cdn | append: '/' | append: url %}
     {% endif %}
 
